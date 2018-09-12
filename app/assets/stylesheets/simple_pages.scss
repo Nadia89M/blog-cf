@@ -12,12 +12,14 @@ html {
   margin: 0;
   padding: 0;
   font-size: 25px;
+  font-family: 'Noto Serif JP', sans-serif;
+  margin-bottom: 50px;
 }
 
 h1 {
   font-size: 40px;
   text-align: center;
-  color: #47C0E5;
+  color: #EF6323;
   margin-top: 100px;
   clear: both;
   text-transform: uppercase;
@@ -37,6 +39,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 9999;
+  border-bottom: 1px solid #EF6323;
 }
 
 nav ul {
@@ -50,47 +53,89 @@ nav li {
     margin: 10px 10px;
 }
 
+nav .navbar-brand {
+  display: inline-block;
+  float: left;
+  margin: 10px 10px;
+}
+
 nav a:link,
 nav a:visited {
   text-decoration: none;
-  color: #47C0E5;
+  color: #EF6323;
   font-weight: bolder;
   font-size: 20px;
 }
 
 nav a:hover,
 nav a:active {
-  color: #5FC325;
+  color: #47C0E5;
   text-decoration: none;
   background-color: transparent;
 }
 
-.carousel-caption {
-  color: #47C0E5;
-  font-weight: bold;
-  position: static !important;
+.box-homepage {
+  padding: 20px;
+  background-color: #002632;
+  border: 5px solid white;
+  color: white;
+
+  p {
+    margin: 10px;
+  }
 }
 
-.address {
+h6 {
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      margin: 10px;
+      color: #EF6323 !important;
+    }
+
+    &:hover,
+    &:active {
+      color: #47C0E5 !important;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
+
+.jumbotron {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+hr {
+  background-color: white;
+}
+
+.jumbotron p {
   text-align: center;
-  font-size: 20px;
-  color: #6b6b6b;
+  font-size: 105%;
 }
 
-.address-top {
-  margin-top: 80px;
-}
+.btn {
+   -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s; /* Safari */
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
 
-.about {
-  font-size: 18px;
-  text-align: center;
-}
+  &:link,
+  &:visited {
+    background-color: #EF6323;
+    border: 1px solid white;
+  }
 
-.my-image {
-  height: 400px;
-  width: auto;
-  display: block;
-  margin: 50px auto;
+  &:hover,
+  &:active {
+    color: #EF6323;
+    border: 1px solid #EF6323;
+    background-color: white;
+  }
 }
 
 footer {

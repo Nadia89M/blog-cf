@@ -1,28 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<table>
-  <tr>
-    <td>
-      <strong>Title:</strong>
-      <%= @article.title %>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <strong>Content:</strong>
-      <%= @article.description %>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <strong>Image url:</strong>
-      <%= @article.image_url %>
-    </td>
-  </tr>
-
-</table>
+<div class="container-fluid show-page">
+  <div class= "image"><%= image_tag(@article.image_url, class: "img-fluid") unless @article.image_url.nil? %></div>
+  <h2><%= @article.title %></h2>
+  <p><%= @article.content %></p>
+</div>
 
 <%= link_to 'Edit', edit_article_path(@article), :class => "show" %> |
 <%= link_to 'Back', articles_path, :class => "back" %>

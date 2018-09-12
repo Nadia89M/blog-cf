@@ -4,6 +4,8 @@
 <head>
   <title>Blog</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,700" rel="stylesheet">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -17,15 +19,16 @@
 
 <body>
   <nav class="nav-section container-fluid">
+    <%= link_to 'Blog Cf', root_path, :class => "navbar-brand" %>
     <ul>
       <li>
-        <a class="link"></a>
+        <%= link_to 'New', new_article_path %>
       </li>
       <li>
-        <a class="link"></a>
+        <%= link_to 'Articles', articles_path %>
       </li>
       <li>
-        <a class="link"></a>
+        <%= link_to 'Home', root_path %>
       </li>
     </ul>
   </nav>

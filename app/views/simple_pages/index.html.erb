@@ -1,1 +1,21 @@
-<h1>Homepage</h1>
+
+<div class="jumbotron">
+  <h1 class="display-3">Blog Cf</h1>
+  <hr class="my-4">
+  <p>Stay tuned new post coming soon!</p>
+  <p class="text-center"><a class="btn btn-primary btn-lg align-center mt-3" href="#" role="button">Sign Up</a></p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% @articles.each do |article| %>
+      <div class="col-xs-12 col-md-4 box-homepage">
+        <%= image_tag(article.image_url, class: "img-fluid") unless article.image_url.nil? %>
+        <h6><%= link_to article.title, article_path(article) %></h6>
+        <p><%= article.description %></p>
+        <hr class="my-6">
+        <p><%= article.created_at%></p>
+      </div>
+    <% end %>
+  </div>
+</div>
