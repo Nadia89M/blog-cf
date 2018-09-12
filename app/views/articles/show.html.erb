@@ -1,19 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<table>
+  <tr>
+    <td>
+      <strong>Title:</strong>
+      <%= @article.title %>
+    </td>
+  </tr>
 
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
+  <tr>
+    <td>
+      <strong>Content:</strong>
+      <%= @article.description %>
+    </td>
+  </tr>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @article.image_url %>
-</p>
+  <tr>
+    <td>
+      <strong>Image url:</strong>
+      <%= @article.image_url %>
+    </td>
+  </tr>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+</table>
+
+<%= link_to 'Edit', edit_article_path(@article), :class => "show" %> |
+<%= link_to 'Back', articles_path, :class => "back" %>

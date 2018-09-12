@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Nameofapp</title>
+  <title>Blog</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -16,6 +16,22 @@
 </head>
 
 <body>
+  <nav class="nav-section container-fluid">
+    <ul>
+      <li>
+        <a class="link"></a>
+      </li>
+      <li>
+        <a class="link"></a>
+      </li>
+      <li>
+        <a class="link"></a>
+      </li>
+    </ul>
+  </nav>
   <%= yield %>
+  <footer class="container-fluid">
+    &copy; 2018 Cf Blog
+  </footer>
 </body>
 </html>
