@@ -115,6 +115,17 @@ form {
   margin: 80px 20px 20px 20px;
 }
 
+.show-page {
+  h2{
+    color: #EF6323;
+  }
+
+  h6{
+    color:#002632;
+    margin-bottom: 30px;
+  }
+}
+
 .box {
   display: block;
   height: 150px;
@@ -123,4 +134,17 @@ form {
   margin-bottom: 10px;
   padding: 10px;
   background-color: #002632;
+}
+
+/*Queries*/
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+
+.box,
+.image-text {
+  display:none;
+}
+
 }

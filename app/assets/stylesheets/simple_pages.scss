@@ -111,6 +111,10 @@ h6 {
   color: white;
 }
 
+.jumbotron-text {
+  line-height: 1rem;
+}
+
 hr {
   background-color: white;
 }
@@ -146,4 +150,16 @@ footer {
   background-color: #002632;
   color: white;
   text-align: center;
+}
+
+/*Queries*/
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+
+.home {
+  display:none;
+}
+
 }

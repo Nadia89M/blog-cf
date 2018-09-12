@@ -3,6 +3,7 @@
 <div class="container-fluid show-page">
   <div class= "image"><%= image_tag(@article.image_url, class: "img-fluid") unless @article.image_url.nil? %></div>
   <h2><%= @article.title %></h2>
+  <h6><%= @article.description %></h6>
   <p><%= @article.content %></p>
 </div>
 
