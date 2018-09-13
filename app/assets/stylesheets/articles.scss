@@ -138,13 +138,24 @@ form {
 
 /*Queries*/
 
-/* Small phones to small tablets: from 481px to 767px */
+/* to 1200px */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
 
   .box,
   .image-text {
     display:none;
+  }
+
+}
+
+/* to 767px */
+
+@media only screen and (max-width: 767px) {
+
+  .edit-product {
+    font-size: 100% !important;
+    margin: 0 !important;
   }
 
 }
