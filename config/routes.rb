@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'simple_pages/about'
-  get 'simple_pages/contact'
-  resources :articles
   root 'simple_pages#index'
+  get 'about', to: 'simple_pages#about'
+  get 'contact', to: 'simple_pages#contact'
+  resources :articles
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

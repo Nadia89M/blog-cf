@@ -18,20 +18,29 @@
 </head>
 
 <body>
-  <nav class="nav-section container-fluid">
-    <%= link_to 'Blog Cf', root_path, :class => "navbar-brand" %>
-    <ul>
-      <li>
-        <%= link_to 'New', new_article_path %>
-      </li>
-      <li>
-        <%= link_to 'Articles', articles_path %>
-      </li>
-      <li>
-        <%= link_to 'Home', root_path, :class => "home" %>
-      </li>
-    </ul>
-  </nav>
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        <%= link_to 'Blog Cf', root_path, :class => "navbar-brand" %>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links ml-auto">
+      <%= link_to 'Home', root_path, :class => "home" %>
+      <%= link_to 'About', about_path %>
+      <%= link_to 'Contact', contact_path %>
+      <%= link_to 'Articles', articles_path %>
+      <%= link_to 'New', new_article_path %>
+    </div>
+  </div>
+
 
   <%= yield %>
 

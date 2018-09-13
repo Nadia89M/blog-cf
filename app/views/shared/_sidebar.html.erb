@@ -1,0 +1,11 @@
+<div class="sidenav">
+  <!-- Search form -->
+  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+  <div class="latest-posts">
+    <h6>Latest Posts</h6>
+    <ul>
+    <% @articles.each do |article| %>
+      <li><%= link_to article.title, article_path(article), class: "post" %></li><br/>
+    <% end %>
+  </div>
+</div>
