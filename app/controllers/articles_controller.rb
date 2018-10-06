@@ -6,12 +6,14 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    @articles = Article.paginate(:page => params[:page])
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
     @comments = @article.comments.order("created_at DESC")
+    @comments = @article.comments.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /articles/new

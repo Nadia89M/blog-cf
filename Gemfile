@@ -40,6 +40,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 #CanCanCan refers to each authorization rule as an ability
 gem 'cancancan', '~> 1.10'
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
 
 group :production do
   # PostgreSQL databases

@@ -161,6 +161,35 @@ background-color: white;
     padding-bottom: 20px;
   }
 }
+
+.article-reviews {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #47C0E5;
+  p {
+    padding: 20px;
+  }
+}
+
+/*Pagination*/
+.previous_page,
+.next_page,
+.pagination a,
+.pagination em {
+  display: inline-block;
+  margin: 10px;
+  color: black !important;
+}
+
+.previous_page:hover,
+.next_page:hover,
+.pagination a:hover,
+.pagination em:hover {
+  color: #5FC325 !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /*Queries*/
 
 /* to 1200px */
