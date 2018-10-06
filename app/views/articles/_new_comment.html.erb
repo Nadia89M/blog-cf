@@ -1,0 +1,14 @@
+<div class="add-comment">
+  <% if signed_in? %>
+  <h4>Add a review:</h4>
+  <%= form_for([@article, @article.comments.build]) do |f| %>
+  <p>
+    <%= f.label :body, "Comments" %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit "Submit", class: "btm-sbt" %>
+  </p>
+  <% end %>
+  <% end %>
+</div>

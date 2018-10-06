@@ -136,6 +136,31 @@ form {
   background-color: #002632;
 }
 
+.btm-sbt {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #EF6323;
+  border: 1px solid #EF6323;
+}
+
+.btm-sbt:hover,
+.btm-sbt:active {
+color: #EF6323;
+background-color: white;
+}
+
+.add-comment{
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #EF6323;
+  width: 30%;
+  h4 {
+    padding-bottom: 20px;
+  }
+}
 /*Queries*/
 
 /* to 1200px */

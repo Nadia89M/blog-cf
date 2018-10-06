@@ -5,7 +5,10 @@
   <h2><%= @article.title %></h2>
   <h6><%= @article.description %></h6>
   <p><%= @article.content %></p>
+  <%= render 'new_comment' %>
 </div>
+<%= render 'comments' %>
+
 
 <%= link_to 'Edit', edit_article_path(@article), :class => "show" %> |
 <%= link_to 'Back', articles_path, :class => "back" %>
