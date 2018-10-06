@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+#Devise provides all the user authentication functions for Rails
+gem 'devise'
+
 group :production do
   # PostgreSQL databases
   gem 'pg'
