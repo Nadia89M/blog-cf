@@ -38,6 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 #Devise provides all the user authentication functions for Rails
 gem 'devise'
+#CanCanCan refers to each authorization rule as an ability
+gem 'cancancan', '~> 1.10'
 
 group :production do
   # PostgreSQL databases
