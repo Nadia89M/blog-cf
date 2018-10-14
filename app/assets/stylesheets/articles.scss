@@ -156,9 +156,16 @@ background-color: white;
   margin: 20px;
   padding: 10px;
   border: 1px solid #EF6323;
-  width: 30%;
   h4 {
     padding-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+  .text_area {
+    height: 100px;
+    width: auto;
   }
 }
 
