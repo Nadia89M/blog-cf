@@ -375,3 +375,7 @@ footer {
   border: 1px solid #47C0E5;
   width: 50%;
 }
+
+@media (max-width: 767px) {
+  .field { width: 100%; }
+}
